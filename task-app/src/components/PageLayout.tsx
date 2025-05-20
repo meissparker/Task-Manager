@@ -11,12 +11,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({children}) => {
         <Container>
             <Row>
                 <Col>
-                    <NavBar/>     
-                </Col>
-            </Row>
-
-            <Row>
-                <Col>
+                    <NavBar/>
                     {children}
                 </Col>
             </Row>

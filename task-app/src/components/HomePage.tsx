@@ -8,9 +8,7 @@ const HomePage: React.FC = () => {
     return (
         <PageLayout>
             <Col>
-            <NavBar/>
             <h1>Welcome to the Task Management App!</h1>
-            <LoginButton/>
             </Col>
         </PageLayout>
     );
