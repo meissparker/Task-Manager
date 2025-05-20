@@ -105,9 +105,9 @@ const EditTask: React.FC = () => {
                     <Form.Group controlId="status">
                         <Form.Label>Status</Form.Label>
                         <Form.Select name="status" value={formData.status} onChange={handleChange} required>
-                        <option value="pending">Pending</option>
-                        <option value="in progress">In Progress</option>
-                        <option value="done">Done</option>
+                        <option value=" Pending">Pending</option>
+                        <option value=" In progress">In Progress</option>
+                        <option value=" Done">Done</option>
                         </Form.Select>
                         <Form.Control.Feedback type="invalid">
                             Please select a status.

@@ -35,9 +35,9 @@ const TodoList: React.FC<TodoListProps> = ({tasks}) => {
                 tasks.map(task => (
                     <Card key={task.id} className="mt-3">
                         <Card.Body>
-                            <Card.Text><strong>Title:</strong>{task.title}</Card.Text>
-                            <Card.Text><strong>Description:</strong>{task.description}</Card.Text>
-                            <Card.Text><strong>Status:</strong>{task.status}</Card.Text>
+                            <Card.Text><strong>Title:</strong> {task.title}</Card.Text>
+                            <Card.Text><strong>Description:</strong> {task.description}</Card.Text>
+                            <Card.Text><strong>Status:</strong> {task.status}</Card.Text>
 
                             <Button
                             variant="secondary"
