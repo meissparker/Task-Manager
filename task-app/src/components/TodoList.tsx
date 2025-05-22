@@ -1,19 +1,13 @@
 import {Button, Card, Alert} from 'react-bootstrap'
-import type { Task } from '../models/Task.model'
 import React from 'react'
 import { useTaskContext } from '../context/TaskContext'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 
-interface TodoListProps {
-    tasks: Task[];
-}
-    
-
-const TodoList: React.FC<TodoListProps> = ({tasks}) => {
+const TodoList: React.FC = () => {
     const [deletedMessage, setDeletedMessage] = useState<string | null>(null);
-    const { setTasks } = useTaskContext();
+    const {tasks, setTasks } = useTaskContext();
     const navigate = useNavigate();
 
     const handleDelete = (id: string) => {
@@ -35,7 +29,7 @@ const TodoList: React.FC<TodoListProps> = ({tasks}) => {
                 tasks.map(task => (
                     <Card key={task.id} className="mt-3">
                         <Card.Body>
-                            <Card.Text><strong>Title:</strong> {task.title}</Card.Text>
+                            <Card.Text><strong>Title:</strong>{task.title}</Card.Text>
                             <Card.Text><strong>Description:</strong> {task.description}</Card.Text>
                             <Card.Text><strong>Status:</strong> {task.status}</Card.Text>
 
