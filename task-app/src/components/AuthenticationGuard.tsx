@@ -1,7 +1,8 @@
 import { withAuthenticationRequired } from '@auth0/auth0-react';
+import type { ComponentType } from 'react';
 
 type AuthenticationGuardProps = {
-    component: React.ReactNode | any;
+    component: ComponentType;
 }
 
 const AuthenticationGuard: React.FC<AuthenticationGuardProps> = ({component})=>{
